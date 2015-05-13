@@ -1,0 +1,11 @@
+<html>
+<head>
+  <title>Loan Payment</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<h2>Loan Payment</h2>
+<p>The loan payment for <%= number_to_currency(@principal) %></p>
+at a rate of <%= @rate %>%
+over <%= @payments %> pay periods is
+<p><%= number_to_currency(@monthly_payment)%></p>
+</html>
